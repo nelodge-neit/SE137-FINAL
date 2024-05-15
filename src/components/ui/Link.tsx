@@ -4,18 +4,20 @@ import NextLink from "next/link";
 interface LinkProps {
     children: React.ReactNode;
     href: string;
-    isPrimary?: boolean;
+    isNotPrimary?: boolean;
     isExternal?: boolean;
     className?: string;
 }
 
-export function Link({ children, href, isPrimary, isExternal, className }: LinkProps) {
+export function Link({ children, href, isNotPrimary, isExternal, className }: LinkProps) {
     return (
         <NextLink
             href={href}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
             className={clsx(
-                "font-mono font-semibold text-base underline",
-                isPrimary && "text-primary-800",
+                "font-sans font-semibold text-base underline",
+                !isNotPrimary && "text-primary-800",
                 className
             )}
         >
