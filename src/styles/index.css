@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply antialiased;
+        @apply scroll-smooth;
+        @apply overscroll-none;
+        @apply h-full;
+    }
+
+    body {
+        @apply bg-cream-900;
+    }
+}
