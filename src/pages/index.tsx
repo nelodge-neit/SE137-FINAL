@@ -73,7 +73,7 @@ function ProjectAndContactsSection() {
                     <Headline>Find Me Online</Headline>
                     <Heading>Repos & Contacts</Heading>
                 </div>
-                <ul className="flex flex-col gap-x-4 gap-y-1 flex-wrap">
+                <ul className="flex flex-col gap-1">
                     <li>
                         <Link isExternal href="https://github.com/hexiro/SE137">
                             Class Repository

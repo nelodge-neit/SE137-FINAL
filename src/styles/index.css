@@ -6,7 +6,6 @@
     html {
         @apply antialiased;
         @apply scroll-smooth;
-        @apply overscroll-none;
         @apply h-full;
     }
 

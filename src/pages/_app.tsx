@@ -2,6 +2,7 @@ import { Heading } from "@/components/ui/Heading";
 import { Headline } from "@/components/ui/Headline";
 import { MenuIcon } from "@/components/ui/Icons";
 import { Link } from "@/components/ui/Link";
+import { Paragraph } from "@/components/ui/Paragraph";
 import "@/styles/index.css";
 import clsx from "clsx";
 import type { AppProps } from "next/app";
@@ -34,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Page>
             <Nav />
             <Component {...pageProps} />
+            <Footer />
         </Page>
     );
 }
@@ -56,7 +58,7 @@ function Nav() {
     return (
         <nav className="flex items-center justify-between px-12 py-6 w-full border-b border-b-slate-800 border-opacity-10">
             <div className="flex flex-row-reverse gap-3 items-center md:gap-0 md:flex-col md:items-start">
-                <Headline>Software Engineer</Headline>
+                <Headline className="text-sm">Software Engineer</Headline>
                 <Heading className="text-3xl hidden md:block">Nathan Lodge</Heading>
                 <h1 className="block md:hidden text-4xl text-primary-900 font-extrabold font-mono tracking-tighter leading-none">
                     NL
@@ -77,5 +79,39 @@ function Nav() {
                 <MenuIcon />
             </button>
         </nav>
+    );
+}
+
+function Footer() {
+    return (
+        <footer className="flex flex-col justify-between items-start px-12 py-14 w-full h-[240px] border-t border-t-slate-800 border-opacity-10">
+            <div className="flex flex-row w-full justify-between">
+                <div>
+                    <Heading className="text-3xl leading-normal">Nathan Lodge</Heading>
+                    <Headline className="text-sm">Software Engineer</Headline>
+                </div>
+                <ul className="flex flex-col gap-1">
+                    <li>
+                        <Link isExternal href="https://www.linkedin.com/in/nathan-lodge">
+                            LinkedIn
+                        </Link>
+                    </li>
+                    <li>
+                        <Link isExternal href="https://twitter.com/hexiro">
+                            Twitter/X
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            isExternal
+                            href="https://www.figma.com/design/1X0gHFNSKEXjqJo00OzYPL/SE137-FINAL"
+                        >
+                            Project Figma
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+            <Paragraph className="font-base">&copy; 2024 Nathan Lodge</Paragraph>
+        </footer>
     );
 }
