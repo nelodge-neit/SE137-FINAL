@@ -10,7 +10,7 @@ export function Section({
     return (
         <section
             className={clsx(
-                "flex items-center px-12 py-12 md:py-6 min-h-[400px] border-y border-slate-800 border-opacity-10",
+                "flex items-center px-12 py-12 min-h-[400px] border-y border-slate-800 border-opacity-10",
                 className
             )}
         >

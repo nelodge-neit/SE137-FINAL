@@ -51,7 +51,7 @@ function FeaturedProjectSection() {
 
 function CommunityTestimonialsSection() {
     return (
-        <Section className="flex-col gap-9 !items-start md:py-12">
+        <Section className="flex-col gap-9 !items-start">
             <div>
                 <Headline>From Real Users</Headline>
                 <Heading>Community Testimonials</Heading>
