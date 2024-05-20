@@ -28,3 +28,10 @@ export const MenuIcon: IconType = (props) => (
         <path d="M4 18l16 0" />
     </Icon>
 );
+
+export const CloseIcon: IconType = (props) => (
+    <Icon {...props}>
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+    </Icon>
+);
