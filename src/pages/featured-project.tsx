@@ -13,6 +13,7 @@ export default function FeaturedProject() {
     return (
         <>
             <FeaturedProjectSection />
+            <HeroImageSection />
             <CommunityTestimonialsSection />
         </>
     );
@@ -21,7 +22,7 @@ export default function FeaturedProject() {
 function FeaturedProjectSection() {
     return (
         <Section>
-            <Side className="flex-col gap-6">
+            <Side className="flex-col gap-6 basis-full sm:basis-2/3 md:basis-1/2">
                 <div>
                     <Headline>Public & Active</Headline>
                     <Heading>Featured Project</Heading>
@@ -46,6 +47,16 @@ function FeaturedProjectSection() {
                 </div>
             </Side>
         </Section>
+    );
+}
+
+function HeroImageSection() {
+    return (
+        <div className="flex items-center justify-start px-[5%] w-full bg-cover bg-center bg-no-repeat bg-[url('/hero.jpg')] h-[250px] md:h-[300px]">
+            <Card>
+                <Heading>CSInspect</Heading>
+            </Card>
+        </div>
     );
 }
 

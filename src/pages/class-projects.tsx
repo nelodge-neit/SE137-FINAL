@@ -14,7 +14,7 @@ export default function ClassProjects() {
 function ClassProjectsSection() {
     return (
         <Section className="flex-col gap-16 !items-start py-24">
-            <Side className="flex-col gap-6 w-1/2">
+            <Side className="flex-col gap-6 basis-full w-full sm:w-2/3 md:w-1/2">
                 <div>
                     <Headline>For SE137 CSS</Headline>
                     <Heading>Class Projects</Heading>
