@@ -107,7 +107,7 @@ function ProjectAndContactsSection() {
                         </Link>
                     </li>
                     <li>
-                        <Link isExternal href="https://twitter.com/hexiro">
+                        <Link isExternal href="https://twitter.com/hexiiro">
                             Twitter/X
                         </Link>
                     </li>
