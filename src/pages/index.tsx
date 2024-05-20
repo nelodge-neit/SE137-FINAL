@@ -5,11 +5,13 @@ import { Section } from "@/components/ui/Section";
 import { Image } from "@/components/ui/Image";
 import { Side } from "@/components/ui/Side";
 import { Link } from "@/components/ui/Link";
+import { Card } from "@/components/ui/Card";
 
 export default function Home() {
     return (
         <>
             <AboutSection />
+            <HeroImageSection />
             <ProjectAndContactsSection />
         </>
     );
@@ -38,6 +40,20 @@ function AboutSection() {
                 />
             </Side>
         </Section>
+    );
+}
+
+function HeroImageSection() {
+    return (
+        <div className="flex items-center justify-start px-[5%] w-full bg-cover bg-center bg-no-repeat bg-[url('/hero.jpg')] h-[250px] md:h-[300px]">
+            <Card className="flex-col gap-3 bg-opacity-75">
+                <Heading>CSInspect</Heading>
+                <Paragraph>
+                    a Twitter/X bot that replies to CS2 (video game) inspect links with a generated
+                    screenshot.
+                </Paragraph>
+            </Card>
+        </div>
     );
 }
 
