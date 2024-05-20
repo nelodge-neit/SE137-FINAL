@@ -13,7 +13,7 @@ export default function ClassProjects() {
 
 function ClassProjectsSection() {
     return (
-        <Section className="flex-col gap-8 !items-start">
+        <Section className="flex-col gap-16 !items-start py-24">
             <Side className="flex-col gap-6 w-1/2">
                 <div>
                     <Headline>For SE137 CSS</Headline>
@@ -81,7 +81,7 @@ const CLASS_PROJECTS = [
 
 function ClassProjectsGrid() {
     return (
-        <div className="grid gap-6 w-full grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-6 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {CLASS_PROJECTS.map((project) => (
                 <ClassProject key={project.week} {...project} />
             ))}
@@ -102,7 +102,7 @@ function ClassProject({ week, assignment, link, date }: ClassProjectProps) {
             </div>
             <ul className="flex flex-row gap-x-4 gap-y-1 flex-wrap">
                 <li>
-                    <Link isExternal href="https://github.com/hexiro/se137">
+                    <Link isExternal href={`https://github.com/hexiro/SE137/tree/main/week${week}`}>
                         Repository
                     </Link>
                 </li>

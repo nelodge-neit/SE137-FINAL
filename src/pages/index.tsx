@@ -26,9 +26,10 @@ function AboutSection() {
                     <Heading>About Me</Heading>
                 </div>
                 <Paragraph>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laboriosam,
-                    atque pariatur odit consectetur impedit fugiat cum asperiores incidunt maiores
-                    doloribus.
+                    Hey, I&rsquo;m Nathan Lodge! An 18-year-old software engineer based in the
+                    United States, I&rsquo;ve been a passionate programmer for over 5 years now,
+                    primarily specializing in Python and TypeScript. My interests include problem-solving, modern technology, and open source
+                    and I aim to build beautiful and efficient software.
                 </Paragraph>
             </Side>
             <Side className="justify-start md:justify-end">

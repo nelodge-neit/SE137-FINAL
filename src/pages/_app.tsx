@@ -11,6 +11,7 @@ import {
     Plus_Jakarta_Sans as PlusJakartaSans,
     Source_Code_Pro as SourceCodePro,
 } from "next/font/google";
+import { useRouter } from "next/router";
 
 const sansFont = PlusJakartaSans({
     weight: "variable",
@@ -55,15 +56,23 @@ function Page({ children }: { children: React.ReactNode }) {
 }
 
 function Nav() {
+    const router = useRouter();
+
     return (
         <nav className="flex items-center justify-between px-12 py-6 w-full border-b border-b-slate-800 border-opacity-10">
-            <div className="flex flex-row-reverse gap-3 items-center md:gap-0 md:flex-col md:items-start">
+            <button
+                type="button"
+                className="flex flex-row-reverse gap-3 items-center md:gap-0 md:flex-col md:items-start"
+                onClick={() => {
+                    void router.push("/");
+                }}
+            >
                 <Headline className="text-sm">Software Engineer</Headline>
                 <Heading className="text-3xl hidden md:block">Nathan Lodge</Heading>
                 <h1 className="block md:hidden text-4xl text-primary-900 font-extrabold font-mono tracking-tighter leading-none">
                     NL
                 </h1>
-            </div>
+            </button>
             <ul className="hidden md:flex flex-row gap-8">
                 <li>
                     <Link href="/featured-project">Featured Project</Link>
@@ -90,7 +99,7 @@ function Footer() {
                     <Heading className="text-3xl leading-normal">Nathan Lodge</Heading>
                     <Headline className="text-sm">Software Engineer</Headline>
                 </div>
-                <ul className="flex flex-col gap-1">
+                <ul className="flex flex-col gap-1 text-right">
                     <li>
                         <Link isExternal href="https://www.linkedin.com/in/nathan-lodge">
                             LinkedIn
