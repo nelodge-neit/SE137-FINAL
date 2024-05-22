@@ -78,7 +78,7 @@ function ProjectAndContactsSection() {
                             </Link>
                         </li>
                         <li>
-                            <Link isExternal href="https:/twitter.com/csgoinspect">
+                            <Link isExternal href="https://twitter.com/csgoinspect">
                                 Twitter/X
                             </Link>
                         </li>
