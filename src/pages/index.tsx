@@ -92,12 +92,12 @@ function ProjectAndContactsSection() {
                 </div>
                 <ul className="flex flex-col gap-1">
                     <li>
-                        <Link isExternal href="https://github.com/hexiro/SE137">
+                        <Link isExternal href="https://github.com/nelodge-neit/SE137">
                             Class Repository
                         </Link>
                     </li>
                     <li>
-                        <Link isExternal href="https://github.com/hexiro/SE137-FINAL">
+                        <Link isExternal href="https://github.com/nelodge-neit/SE137-FINAL">
                             Final Project Repository
                         </Link>
                     </li>

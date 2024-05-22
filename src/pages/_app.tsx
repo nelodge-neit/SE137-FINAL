@@ -200,7 +200,7 @@ function Footer() {
                     <li>
                         <Link
                             isExternal
-                            href="https://www.figma.com/design/1X0gHFNSKEXjqJo00OzYPL/SE137-FINAL"
+                            href="https://www.figma.com/design/QM7FBiLDeJiWfssz1cfc2Q/SE137-FINAL"
                         >
                             Project Figma
                         </Link>

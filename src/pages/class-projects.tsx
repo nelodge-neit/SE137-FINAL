@@ -102,7 +102,7 @@ function ClassProject({ week, assignment, link, date }: ClassProjectProps) {
             </div>
             <ul className="flex flex-row gap-x-4 gap-y-1 flex-wrap">
                 <li>
-                    <Link isExternal href={`https://github.com/hexiro/SE137/tree/main/week${week}`}>
+                    <Link isExternal href={`https://github.com/nelodge-neit/SE137/tree/main/week${week}`}>
                         Repository
                     </Link>
                 </li>
